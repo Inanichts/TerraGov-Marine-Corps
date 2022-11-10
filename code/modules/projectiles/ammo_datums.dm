@@ -2399,6 +2399,22 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	penetration = 5
 	hitscan_effect_icon = "beam_particle"
 
+/datum/ammo/energy/lasgun/marine/handcannon
+	name = "handcannon bolt"
+	icon_state = "bolt3"
+	hud_state_empty = "battery_empty_flash"
+	flags_ammo_behavior = AMMO_ENERGY|AMMO_SUNDERING
+	armor_type = "energy"
+	max_range = 14
+	accurate_range = 5 //for charger
+	shell_speed = 4
+	accuracy_var_low = 5
+	accuracy_var_high = 5
+	accuracy = 10
+	point_blank_range = 2
+	damage = 45
+	penetration = 5
+	sundering = 5
 /datum/ammo/energy/lasgun/marine/pistol/disabler
 	name = "disabler bolt"
 	icon_state = "disablershot"

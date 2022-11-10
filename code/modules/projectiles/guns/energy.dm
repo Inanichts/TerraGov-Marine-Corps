@@ -996,3 +996,41 @@
 
 /obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/culverin/magharness
 	starting_attachment_types = list(/obj/item/attachable/magnetic_harness)
+
+/obj/item/weapon/gun/energy/lasgun/lasrifle/tx_deathadder
+	name = "\improper Terra Experimental Deathadder"
+	desc = "A TerraGov laser handcannon, sacrifices battery for more firepower. Needs both hands to be fired properly. It has an integrated charge system for alternate fire. Uses standard Terra Experimental (abbreviated as TE) power cells. As with all TE Laser weapons, they use a lightweight alloy combined without the need for bullets any longer decreases their weight and aiming speed quite some vs their ballistic counterparts."
+	unload_sound = 'sound/weapons/guns/interact/revolver_unload.ogg'
+	reload_sound = 'sound/weapons/guns/interact/standard_laser_pistol_reload.ogg'
+	fire_sound = 'sound/weapons/guns/fire/deathadder.ogg'
+	icon_state = "tx_adder"
+	item_state = "tx_adder"
+	muzzleflash_iconstate = "muzzle_flash_laser"
+	w_class = WEIGHT_CLASS_NORMAL
+	flags_equip_slot = ITEM_SLOT_BELT
+	max_shots = 60 //codex stuff
+	ammo_datum_type = /datum/ammo/energy/lasgun/marine/handcannon
+	ammo_diff = null
+	rounds_per_shot = 50
+	gun_firemode = GUN_FIREMODE_AUTOMATIC
+	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
+
+	attachable_allowed = list(
+		/obj/item/attachable/reddot,
+		/obj/item/attachable/lasersight,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/scope/mini,
+		/obj/item/attachable/lace,
+	)
+
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_ENERGY|GUN_AMMO_COUNTER|GUN_NO_PITCH_SHIFT_NEAR_EMPTY|GUN_AMMO_COUNT_BY_SHOTS_REMAINING
+	attachable_offset = list("muzzle_x" = 23, "muzzle_y" = 22,"rail_x" = 12, "rail_y" = 22, "under_x" = 16, "under_y" = 14, "stock_x" = 22, "stock_y" = 12)
+
+	akimbo_additional_delay = 0.9
+	wield_delay = 0.6 SECONDS
+	scatter = 2
+	scatter_unwielded = 4
+	fire_delay = 0.15 SECONDS
+	accuracy_mult = 1
+	accuracy_mult_unwielded = 0.9
+	damage_falloff_mult = 0.1
