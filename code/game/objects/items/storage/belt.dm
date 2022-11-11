@@ -836,10 +836,13 @@
 	item_state = "tp44_holster"
 	bypass_w_limit = list(
 		/obj/item/weapon/gun/revolver,
+		/obj/item/weapon/gun/energy/lasgun/lasrifle/tx_deathadder,
 	)
 	can_hold = list(
 		/obj/item/weapon/gun/revolver,
 		/obj/item/ammo_magazine/revolver,
+		/obj/item/weapon/gun/energy/lasgun/lasrifle/tx_deathadder,
+		/obj/item/cell/lasgun/lasrifle,
 	)
 
 /obj/item/storage/belt/gun/m44

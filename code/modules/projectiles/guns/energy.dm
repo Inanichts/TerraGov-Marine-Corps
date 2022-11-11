@@ -1006,14 +1006,15 @@
 	icon_state = "tx_adder"
 	item_state = "tx_adder"
 	muzzleflash_iconstate = "muzzle_flash_laser"
-	w_class = WEIGHT_CLASS_NORMAL
+	flags_equip_slot = ITEM_SLOT_BELT
+	w_class = WEIGHT_CLASS_BULKY
 	flags_equip_slot = ITEM_SLOT_BELT
 	max_shots = 60 //codex stuff
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/handcannon
 	ammo_diff = null
-	rounds_per_shot = 50
-	gun_firemode = GUN_FIREMODE_AUTOMATIC
-	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
+	rounds_per_shot = 80
+	gun_firemode = GUN_FIREMODE_SEMIAUTO
+	gun_firemode_list = list(GUN_FIREMODE_SEMIAUTO)
 
 	attachable_allowed = list(
 		/obj/item/attachable/reddot,
@@ -1023,14 +1024,14 @@
 		/obj/item/attachable/lace,
 	)
 
-	flags_gun_features = GUN_CAN_POINTBLANK|GUN_ENERGY|GUN_AMMO_COUNTER|GUN_NO_PITCH_SHIFT_NEAR_EMPTY|GUN_AMMO_COUNT_BY_SHOTS_REMAINING
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_ENERGY|GUN_AMMO_COUNTER|GUN_NO_PITCH_SHIFT_NEAR_EMPTY|GUN_AMMO_COUNT_BY_SHOTS_REMAINING|GUN_WIELDED_FIRING_ONLY
 	attachable_offset = list("muzzle_x" = 23, "muzzle_y" = 22,"rail_x" = 12, "rail_y" = 22, "under_x" = 16, "under_y" = 14, "stock_x" = 22, "stock_y" = 12)
 
 	akimbo_additional_delay = 0.9
 	wield_delay = 0.6 SECONDS
 	scatter = 2
 	scatter_unwielded = 4
-	fire_delay = 0.15 SECONDS
+	fire_delay = 0.25 SECONDS
 	accuracy_mult = 1
 	accuracy_mult_unwielded = 0.9
 	damage_falloff_mult = 0.1
